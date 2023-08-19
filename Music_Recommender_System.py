@@ -4,7 +4,6 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from scipy.spatial.distance import cdist
 import plotly.express as px
-from collections import defaultdict
 
 # Load your data
 data = pd.read_csv("data.csv")
@@ -62,16 +61,6 @@ def recommend_songs(seed_songs, data, n_recommendations=10):
                 break
     
     return pd.DataFrame(rec_songs)[metadata_cols].to_dict(orient='records')
-
-# Function to flatten a list of dictionaries into a single dictionary
-def flatten_dict_list(dict_list):
-    flattened_dict = defaultdict()
-    for key in dict_list[0].keys():
-        flattened_dict[key] = []
-    for dictionary in dict_list:
-        for key, value in dictionary.items():
-            flattened_dict[key].append(value)
-    return flattened_dict
 
 # Normalize the song data using Min-Max Scaler
 min_max_scaler = MinMaxScaler()

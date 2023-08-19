@@ -33,6 +33,6 @@ The project follows a series of steps to achieve the goal of providing accurate 
 ## Links
 
 - [Kaggle Notebook](https://www.kaggle.com/aliessamali/music-recommendation-system-streamlit)
-- [Streamlit Web App](link_to_streamlit_app)
+- [Streamlit Web App](https://musicrecommendationsystem-zkaftqsquighe8wizjvcas.streamlit.app)
 
 Feel free to contribute, provide feedback, or report issues by opening a GitHub issue or pull request.
